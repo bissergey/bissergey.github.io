@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Lenni Art</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet"  href="../style/pages/index/index.css"/>
+        <link rel="preconnect"  href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+        <link href="https://fonts.googleapis.com./css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="body">
+        <header class="header">
+            <div class="header__container container">
+                <a href="index.html" class="page-header__logo">
+                  <img src="../assets/images/logo.svg" class="page-header__logo-img"/>
+                </a>
+
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__list__item">
+                            <a href="#" class="nav__list__item__link">Мероприятия</a>
+                        </li>
+                        <li class="nav__list__item">
+                            <a href="#" class="nav__list__item__link">Блог</a>
+                        </li>
+                        <li class="nav__list__item">
+                            <a href="#" class="nav__list__item__link">О нас</a>
+                        </li>
+                        <li class="nav__list__item">
+                            <a href="#" class="nav__list__item__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <button class="btn">Войти</button>
+            </div>
+
+        </header>
+
+        <main class="main">
+            <section class="art-space">
+                <h1 class="art-space__title">Арт - пространство</h1>
+                <picture class="art-space__picture">
+                    <img src="../assets/images/lenni.png"
+                        class="art-space__img"/>
+                </picture>
+
+
+                <div class="container">
+                    <p class="art-space__desc">
+                        для людей, горящих сердцем и делом
+                        место для настоящего
+                    </p>
+
+                    <spa class="art-space__text">
+                        я хочу:
+                    </spa>
+
+                    <div class="art-space__btn-wrapper js-art-space-btns">
+                        <button class="art-space__btn art-space__btn_active">Провести мероприятие</button>
+                        <button class="art-space__btn">Стать арендатором</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="offers home__offers"></section>
+            <section class="about home__about"></section>
+            <section class="upcoming home__upcoming"></section>
+            <section class="listing home__listing"></section>
+            <section class="contacts home__contacts"></section>
+        </main>
+
+        <footer class="page-footer"></footer>
+
+    </body>
+
+    <script src="/scripts/index.js"></script>
+</html>

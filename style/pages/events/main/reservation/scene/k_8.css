@@ -1,0 +1,35 @@
+.reservation__scheme-wrapper_k {
+    grid-area: k;
+    position: relative;
+    left: -44px;
+    top: -13px;
+    padding: var(--padding-round) 0 var(--padding-round) var(--padding-round);
+    width: min-content;
+}
+
+.reservation__scheme_k {
+    width: 62px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--active-btn);
+}
+
+.reservation__scheme_k-round-1 {
+    left: calc(50% + calc(var(--padding-round) / 2));
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.reservation__scheme_k-round-2 {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.reservation__scheme_k-round-3 {
+    left: calc(50% + calc(var(--padding-round) / 2));
+    top: 0;
+    transform: translateX(-50%);
+}

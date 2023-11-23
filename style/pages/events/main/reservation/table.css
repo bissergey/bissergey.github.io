@@ -1,0 +1,87 @@
+.reservation__checkbox-block{
+    display: flex;
+    flex-direction: column;
+}
+
+.check {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.check__input {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+}
+
+.check__box {
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    border: 1px solid var(--main-color);
+}
+
+.check__input:checked + .check__box {
+    background: var(--main-color);
+    position: relative;
+}
+
+.check__input:checked + .check__box:after {
+    content: url("/assets/svg/check.svg");
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.table__text{
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.check_red > .check__box {
+    border-color: var(--active-links);
+}
+
+.check_red > .table__text {
+    color: var(--active-links);
+}
+
+.check_red > .check__input:checked + .check__box {
+    background: var(--active-links);
+}
+
+.check__input:disabled + .check__box {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.check__input:disabled ~ .table__text {
+    opacity: 0.5;
+    cursor: default;
+}
+
+/*скрываем чекбокс
+.check__input{
+    position: absolute;
+    -webkit-appearance: none;
+}
+
+.check__box{
+    position: absolute
+    margin-top: 9px;
+    margin-left: 15px;
+    wight: 24px;
+    height: 24px;
+}
+*/

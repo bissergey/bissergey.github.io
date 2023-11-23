@@ -1,0 +1,55 @@
+.art-space__title,
+.art-space__desc {
+    color: var(--main-color);
+    font-family: Lora;
+    font-size: 45px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.art-space__img{
+    width: 100%;
+    object-fit: contain;
+    max-height: 325px;
+    margin-bottom: 70px;
+}
+
+
+.art-space__desc{
+   max-width: 990px;
+    margin: 0 auto 100px;
+}
+
+.art-space__text{
+    font-family: 'Lora';
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.44px;
+    text-transform: uppercase;
+
+    display: block;
+    text-align: center;
+    margin: 0 auto 46px;
+}
+
+.art-space__btn-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 106px;
+}
+
+.art-space__btn {
+    padding: 15px 40px;
+    border: 1px solid var(--main-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.art-space__btn_active {
+    background: var(--active-btn);
+    border-color: var(--active-btn);
+    color: white;
+}

@@ -1,0 +1,95 @@
+@import url('e_1.css');
+@import url('f_2.css');
+@import url('g_11.css');
+@import url('k_8.css');
+@import url('l_7.css');
+@import url('m_3.css');
+@import url('n_4.css');
+@import url('o_6.css');
+@import url('p_5.css');
+@import url('b_10.css');
+@import url('c_9.css');
+@import url('a_scene.css');
+@import url('d_dance.css');
+@import url('../table.css');
+
+:root {
+    --padding-round: 30px; /*отступ у стульчиков*/
+    --round: 24px; /*размер стульчика*/
+}
+
+.reservation__scheme-block {
+    margin-top: 33px;
+    margin-right: -12px;
+    position: relative;
+    display: grid;
+    grid-template-areas:
+            ". . a . ."
+            "b c d e f"
+            "g k l n m"
+            ". o . p .";
+    grid-column-gap: 0;
+    grid-template-rows: repeat(5, min-content);
+    align-items: flex-start;
+}
+
+.reservation__scheme-round-black {
+    width: var(--round); /*стульчик*/
+    height: var(--round);
+    border: 1px solid var(--main-color);
+    border-radius: 50px;
+
+    position: absolute;
+}
+
+.reservation__scheme-round-black_active {
+    background: var(--main-color);
+}
+
+.reservation__scheme__black_active {
+    background: var(--main-color);
+}
+
+.reservation__scheme__black_active:after,
+.reservation__scheme__black_active:before {
+    background: var(--main-color);
+}
+
+.reservation__scheme__red_active {
+    background: var(--active-btn);
+}
+
+.reservation__scheme-round-red {
+    width: var(--round);
+    height: var(--round);
+    border: 1px solid var(--active-btn);
+    border-radius: 50px;
+
+    position: absolute;
+}
+
+.reservation__scheme-round-red_active{
+    background: var(--active-btn);
+}
+
+.reservation__scheme-text {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.reservation__scheme-text-desc {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.reservation__scheme-text-desc {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--main-color);
+}
+
+.reservation__scheme-text-desc_active {
+    color: white;
+}

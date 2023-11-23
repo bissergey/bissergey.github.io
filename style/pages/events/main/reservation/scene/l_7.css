@@ -1,0 +1,41 @@
+.reservation__scheme-wrapper_l {
+    grid-area: l;
+    position: relative;
+    top: 30px;
+    left: -32px;
+    padding: 0 var(--padding-round) var(--padding-round) var(--padding-round);
+    width: min-content;
+}
+
+.reservation__scheme_l {
+    width: 84px;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--active-btn);
+}
+
+.reservation__scheme_l-round-1 {
+    right: calc(50% - 9px);
+    bottom: 0px;
+    transform: translateX(100%);
+}
+
+.reservation__scheme_l-round-4 {
+    left: calc(50% - 9px);
+    transform: translateX(-100%);
+    bottom: 0;
+}
+
+.reservation__scheme_l-round-2 {
+    left: 0;
+    top: calc(50% - calc(var(--padding-round) / 2));
+    transform: translateY(-50%);
+}
+
+.reservation__scheme_l-round-3 {
+    right: 0;
+    top: calc(50% - calc(var(--padding-round) / 2));
+    transform: translateY(-50%);
+}

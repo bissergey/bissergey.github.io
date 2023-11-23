@@ -1,0 +1,14 @@
+.reservation__scheme_a {
+    grid-area: a;
+    background: var(--main-color);
+    width: 162px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 52px;
+    left: 48%;
+    transform: translateX(-50%);
+}

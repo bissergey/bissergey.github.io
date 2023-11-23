@@ -1,0 +1,19 @@
+@import url("scene/index.css");
+@import url("table.css");
+
+.reservation {
+    margin-bottom: 67px;
+}
+
+.reservation__title {
+    color: var(--main-color);
+    font-size: 18px;
+    font-weight: 700;
+
+    margin-bottom: 31px;
+}
+
+.reservation__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
